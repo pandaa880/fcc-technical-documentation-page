@@ -1,0 +1,24 @@
+{
+  "name": "fcc-technical-documentation-page",
+  "version": "1.0.0",
+  "description": "A Simple &amp; Responsive Technical documentation page built using HTML5 &amp; SASS. Part of FreeCodeCamp Responsive Site projects.",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "node-sass sass/main.scss -o css",
+    "watch:sass": "npm run build:sass && node-sass sass/main.scss -wo css",
+    "start": "npm run watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandaa880/fcc-technical-documentation-page.git"
+  },
+  "author": "pandaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pandaa880/fcc-technical-documentation-page/issues"
+  },
+  "homepage": "https://github.com/pandaa880/fcc-technical-documentation-page#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
