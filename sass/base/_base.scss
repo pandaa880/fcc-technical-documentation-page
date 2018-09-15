@@ -10,3 +10,19 @@ body {
   margin: 0;
   padding: 0;
 }
+
+h1,
+h2,
+h3 {
+  @include fontMixin($primary-font, $font-black);
+}
+
+p,
+li {
+  @include fontMixin($secondary-font, $font-normal);
+}
+
+pre code {
+  @include fontMixin($code-font, $font-normal);
+  letter-spacing: 1px;
+}
