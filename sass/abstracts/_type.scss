@@ -1,0 +1,15 @@
+// font stack
+$primary-font: "Raleway", sans-serif;
+$secondary-font: "Roboto Mono", monospace;
+$code-font: "Inconsolata", monospace;
+
+// font-weights
+$font-normal: 400;
+$font-bold: 700;
+$font-black: 900;
+
+// mixins
+@mixin fontMixin($family, $weight) {
+  font-family: $family;
+  font-weight: $weight;
+}
