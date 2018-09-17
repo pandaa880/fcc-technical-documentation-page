@@ -73,6 +73,22 @@ pre code {
   text-decoration: none;
   padding: 0.5em 1em; }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: white;
+  background: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+  border: none;
+  transform: scale(1.1);
+  transition: transform ease-in-out 250ms; }
+  .nav-link:hover::before,
+  .nav-link:focus::before {
+    content: "{";
+    margin-right: 5px; }
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    content: "}";
+    margin-left: 5px; }
+
 @media (min-width: 992px) {
   .docs-nav {
     height: max-content;
