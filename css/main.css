@@ -27,9 +27,8 @@ pre code {
   letter-spacing: 1px; }
 
 .container {
-  width: 95%;
-  margin: 0 auto;
-  padding: 1em;
+  width: 100%;
+  padding: 0.5em;
   display: flex;
   flex-direction: column; }
 
@@ -98,3 +97,18 @@ pre code {
     top: 40px;
     overflow-x: hidden;
     overflow-y: auto; } }
+
+#main-doc {
+  display: grid;
+  grid-gap: 2em; }
+
+.main-section article {
+  margin-left: 0; }
+  .main-section article li {
+    margin-left: 0.5em; }
+
+@media (min-width: 768px) {
+  .main-section article {
+    margin-left: 2em; }
+    .main-section article li {
+      margin-left: 1.5em; } }
