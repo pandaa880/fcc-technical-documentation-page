@@ -1,0 +1,36 @@
+.docs-nav {
+  // height: 300px;
+  margin-bottom: 5em;
+}
+.unstyled-list {
+  position: sticky;
+  max-height: 300px;
+  top: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.nav-link {
+  border-left: 2px solid #ccc;
+}
+
+.nav-link {
+  display: inline-block;
+  color: $link-color;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+@media (min-width: 992px) {
+  .docs-nav {
+    height: max-content;
+    margin-right: 1em;
+  }
+
+  .unstyled-list {
+    max-height: initial;
+    top: 40px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

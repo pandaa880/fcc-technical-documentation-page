@@ -26,3 +26,25 @@ pre code {
   @include fontMixin($code-font, $font-normal);
   letter-spacing: 1px;
 }
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.unstyled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
