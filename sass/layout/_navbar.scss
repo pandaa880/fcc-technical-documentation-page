@@ -21,6 +21,25 @@
   padding: 0.5em 1em;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: $white;
+  background: $secondary-gradient;
+  border: none;
+  transform: scale(1.1);
+  transition: transform ease-in-out 250ms;
+
+  &::before {
+    content: "{";
+    margin-right: 5px;
+  }
+
+  &::after {
+    content: "}";
+    margin-left: 5px;
+  }
+}
+
 @media (min-width: 992px) {
   .docs-nav {
     height: max-content;
